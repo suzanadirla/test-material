@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 import {DisplayMessages} from '../shared/display-messages';
 import {People} from '../shared/services/people/model/people';
@@ -16,6 +16,8 @@ export class PeopleListComponent implements OnInit {
   errorMessage: string = DisplayMessages.GET_DATA_ERROR;
   loadingMessage: string = DisplayMessages.LOADING;
   noDataMessage: string = DisplayMessages.NO_DATA;
+
+  @Input() selectable: boolean = false;
 
   constructor(private peopleService: PeopleService) {
   }

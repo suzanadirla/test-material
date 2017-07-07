@@ -8,7 +8,7 @@
 
 <div *ngIf="!error && !loading" class="peopleList__content">
 
-  <md-chip-list *ngIf="peopleList.length" class="mat-chip-list-stacked">
+  <md-chip-list *ngIf="peopleList.length" class="mat-chip-list-stacked" selectable="{{selectable}}">
     <md-chip *ngFor="let people of peopleList"
              selected="true"
              color="{{people.color}}">
