@@ -5,7 +5,11 @@ export class TestProjectPage {
     return browser.get('/');
   }
 
-  getParagraphText() {
-    return element(by.css('app-root h1')).getText();
+  getParagraphText(hTag) {
+    return element(by.css('app-root ' + hTag)).getText();
+  }
+
+  hasPeopleListContainer() {
+    return element(by.css('app-people-list .peopleList__content')).isPresent();
   }
 }

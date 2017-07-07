@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+
+import {DisplayMessages} from './shared/display-messages';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title: string = DisplayMessages.APP_TITLE;
+  subtitle: string = DisplayMessages.APP_SUBTITLE;
 }

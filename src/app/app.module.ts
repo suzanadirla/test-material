@@ -1,16 +1,26 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {HttpModule} from '@angular/http';
+import {NgModule} from '@angular/core';
 
-import { AppComponent } from './app.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MdChipsModule} from '@angular/material';
+
+import {AppComponent} from './app.component';
+import {HttpAuth} from './shared/services/api/http-auth';
+import {PeopleListComponent} from './people-list/people-list.component';
+import {PeopleService} from './shared/services/people/people.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PeopleListComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, HttpModule,
+    BrowserAnimationsModule, MdChipsModule
   ],
-  providers: [],
+  providers: [HttpAuth, PeopleService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

@@ -1,0 +1,23 @@
+<p *ngIf="loading" class="peopleList__mesage--loading">
+  {{loadingMessage}}
+</p>
+
+<p *ngIf="error" class="peopleList__message--error">
+  {{errorMessage}}
+</p>
+
+<div *ngIf="!error && !loading" class="peopleList__content">
+
+  <md-chip-list *ngIf="peopleList.length" class="mat-chip-list-stacked">
+    <md-chip *ngFor="let people of peopleList"
+             selected="true"
+             color="{{people.color}}">
+      {{people.firstName}} {{people.lastName}}
+    </md-chip>
+  </md-chip-list>
+
+  <p *ngIf="peopleList.length == 0" class="peopleList__message--noData">
+    {{noDataMessage}}
+  </p>
+
+</div>

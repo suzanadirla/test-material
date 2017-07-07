@@ -1,0 +1,239 @@
+{
+  "list": {
+    "entries": [
+      {
+        "entry": {
+          "userStatus": "string",
+          "skypeId": "string",
+          "jobTitle": "string",
+          "enabled": true,
+          "googleId": "string",
+          "description": "string",
+          "company": {
+            "organization": "string",
+            "fax": "string",
+            "postcode": "string",
+            "address2": "string",
+            "address1": "string",
+            "address3": "string",
+            "email": "string",
+            "telephone": "string"
+          },
+          "firstName": "string",
+          "email": "string",
+          "id": "101",
+          "instantMessageId": "string",
+          "lastName": "string",
+          "emailNotificationsEnabled": true,
+          "mobile": "string",
+          "location": "string",
+          "telephone": "string"
+        }
+      },
+      {
+        "entry": {
+          "userStatus": "string",
+          "skypeId": "f",
+          "jobTitle": "d",
+          "enabled": true,
+          "googleId": "f",
+          "description": "d",
+          "company": {
+            "fax": "string",
+            "postcode": "string",
+            "address2": "string",
+            "organization": "string",
+            "email": "string",
+            "telephone": "string",
+            "address1": "string",
+            "address3": "string"
+          },
+          "firstName": "v",
+          "email": "s@b.com",
+          "instantMessageId": "d",
+          "id": "a",
+          "lastName": "a",
+          "emailNotificationsEnabled": true,
+          "location": "f",
+          "mobile": "string",
+          "telephone": "string"
+        }
+      },
+      {
+        "entry": {
+          "skypeId": "abeecher",
+          "jobTitle": "Graphic Designer",
+          "userStatus": "Helping to design the look and feel of the new web site",
+          "avatarId": "198500fc-1e99-4f5f-8926-248cea433366",
+          "firstName": "Alice",
+          "email": "abeecher@example.com",
+          "enabled": false,
+          "description": "Alice is a demo user for the sample Alfresco Team site.",
+          "company": {
+            "postcode": "ALF1 SAM1",
+            "address2": "Tilbury",
+            "address1": "200 Butterwick Street",
+            "address3": "UK",
+            "organization": "Moresby, Garland and Wedge"
+          },
+          "statusUpdatedAt": "2011-02-15T20:20:13.432+0000",
+          "id": "abeecher",
+          "lastName": "Beecher",
+          "emailNotificationsEnabled": true,
+          "mobile": "0112211001100",
+          "location": "Tilbury, UK",
+          "telephone": "0112211001100"
+        }
+      },
+      {
+        "entry": {
+          "id": "admin",
+          "enabled": true,
+          "company": {},
+          "emailNotificationsEnabled": true,
+          "firstName": "Administrator",
+          "email": "admin@alfresco.com"
+        }
+      },
+      {
+        "entry": {
+          "id": "apiPerson",
+          "enabled": true,
+          "company": {},
+          "lastName": "apiLname",
+          "emailNotificationsEnabled": true,
+          "firstName": "apiFname",
+          "email": "apiPerson@example.com"
+        }
+      },
+      {
+        "entry": {
+          "company": {},
+          "emailNotificationsEnabled": true,
+          "lastName": "Morran",
+          "id": "bmorran",
+          "enabled": false,
+          "email": "bmorran@example.com",
+          "firstName": "Bob"
+        }
+      },
+      {
+        "entry": {
+          "emailNotificationsEnabled": true,
+          "lastName": "dlps",
+          "company": {},
+          "enabled": true,
+          "id": "david",
+          "email": "david.dlps@gmail.com",
+          "firstName": "david"
+        }
+      },
+      {
+        "entry": {
+          "enabled": false,
+          "id": "guest",
+          "emailNotificationsEnabled": true,
+          "company": {},
+          "firstName": "Guest"
+        }
+      },
+      {
+        "entry": {
+          "company": {},
+          "enabled": true,
+          "email": "john.doe@example.com",
+          "firstName": "John",
+          "lastName": "Doe",
+          "emailNotificationsEnabled": true,
+          "id": "jdoe",
+          "jobTitle": "Software Engineer",
+          "skypeId": "johndoe_skype"
+        }
+      },
+      {
+        "entry": {
+          "telephone": "012211331100",
+          "lastName": "Jackson",
+          "emailNotificationsEnabled": true,
+          "location": "Threepwood, UK",
+          "mobile": "012211331100",
+          "id": "mjackson",
+          "statusUpdatedAt": "2011-02-15T20:13:09.649+0000",
+          "description": "Mike is a demo user for the sample Alfresco Team site.",
+          "company": {
+            "organization": "Green Energy",
+            "address3": "UK",
+            "address1": "100 Cavendish Street",
+            "address2": "Threepwood",
+            "postcode": "ALF1 SAM1"
+          },
+          "enabled": false,
+          "email": "mjackson@example.com",
+          "firstName": "Mike",
+          "avatarId": "3fbde500-298b-4e80-ae50-e65a5cbc2c4d",
+          "userStatus": "Working on a new web design for the corporate site",
+          "jobTitle": "Web Site Manager",
+          "skypeId": "mjackson"
+        }
+      },
+      {
+        "entry": {
+          "lastName": "string",
+          "emailNotificationsEnabled": true,
+          "location": "string",
+          "mobile": "string",
+          "instantMessageId": "string",
+          "id": "string",
+          "telephone": "string",
+          "jobTitle": "string",
+          "skypeId": "string",
+          "userStatus": "string",
+          "email": "string",
+          "firstName": "prova",
+          "googleId": "string",
+          "company": {
+            "email": "string",
+            "telephone": "string",
+            "address3": "string",
+            "address1": "string",
+            "address2": "string",
+            "fax": "string",
+            "postcode": "string",
+            "organization": "string"
+          },
+          "description": "string",
+          "enabled": true
+        }
+      },
+      {
+        "entry": {
+          "lastName": "User",
+          "emailNotificationsEnabled": true,
+          "company": {},
+          "enabled": true,
+          "id": "test",
+          "email": "test@alfresco.com",
+          "firstName": "Test"
+        }
+      },
+      {
+        "entry": {
+          "firstName": "Alice",
+          "email": "thirumal@example.com",
+          "id": "thirumal",
+          "enabled": true,
+          "company": {},
+          "emailNotificationsEnabled": true,
+          "lastName": "Beecher"
+        }
+      }
+    ],
+    "pagination": {
+      "skipCount": 0,
+      "count": 13,
+      "totalItems": 13,
+      "hasMoreItems": false,
+      "maxItems": 100
+    }
+  }
+}
