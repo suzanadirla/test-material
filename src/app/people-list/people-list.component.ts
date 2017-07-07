@@ -20,6 +20,7 @@ export class PeopleListComponent implements OnInit {
   selectedPeople: People[] = [];
 
   @Input() selectable: boolean = false;
+  @Input() selectAll: boolean = false;
 
   constructor(private peopleService: PeopleService) {
   }

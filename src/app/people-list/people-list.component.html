@@ -10,7 +10,7 @@
 
   <md-chip-list *ngIf="peopleList.length" class="mat-chip-list-stacked" selectable="{{selectable}}">
     <md-chip *ngFor="let people of peopleList"
-             selected="true"
+             selected="{{selectAll}}"
              color="{{people.color}}"
              (select)="onChipSelect($event, people)" (deselect)="onChipDeselect($event, people)">
       {{people.firstName}} {{people.lastName}}
