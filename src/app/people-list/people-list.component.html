@@ -11,10 +11,17 @@
   <md-chip-list *ngIf="peopleList.length" class="mat-chip-list-stacked" selectable="{{selectable}}">
     <md-chip *ngFor="let people of peopleList"
              selected="true"
-             color="{{people.color}}">
+             color="{{people.color}}"
+             (select)="onChipSelect($event, people)" (deselect)="onChipDeselect($event, people)">
       {{people.firstName}} {{people.lastName}}
     </md-chip>
   </md-chip-list>
+
+  <div *ngIf="selectedPeople.length">
+    <h2>List of selected people:</h2>
+    <span *ngFor="let people of selectedPeople; let i = index"><span *ngIf="i > 0">, </span>
+      {{people.firstName}} {{people.lastName}}</span>
+  </div>
 
   <p *ngIf="peopleList.length == 0" class="peopleList__message--noData">
     {{noDataMessage}}

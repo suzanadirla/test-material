@@ -3,6 +3,7 @@ import {Component, Input, OnInit} from '@angular/core';
 import {DisplayMessages} from '../shared/display-messages';
 import {People} from '../shared/services/people/model/people';
 import {PeopleService} from '../shared/services/people/people.service';
+import {MdChipEvent} from '@angular/material';
 
 @Component({
   selector: 'app-people-list',
@@ -16,6 +17,7 @@ export class PeopleListComponent implements OnInit {
   errorMessage: string = DisplayMessages.GET_DATA_ERROR;
   loadingMessage: string = DisplayMessages.LOADING;
   noDataMessage: string = DisplayMessages.NO_DATA;
+  selectedPeople: People[] = [];
 
   @Input() selectable: boolean = false;
 
@@ -45,4 +47,18 @@ export class PeopleListComponent implements OnInit {
     );
   }
 
+  onChipSelect(event: MdChipEvent, people: People) {
+    setTimeout(() => {
+      this.selectedPeople.push(people);
+    }, 0);
+  }
+
+  onChipDeselect(event: MdChipEvent, people: People) {
+    let removeIndex = this.selectedPeople
+      .map((person: People) => {
+        return person.id
+      })
+      .indexOf(people.id);
+    this.selectedPeople.splice(removeIndex, 1);
+  }
 }
