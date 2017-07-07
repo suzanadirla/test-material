@@ -37,13 +37,11 @@ export class PeopleListComponent implements OnInit {
         this.loading = false;
         this.error = false;
         this.peopleList = data;
-        console.log(data);
 
       },
       (error) => {
         this.loading = false;
         this.error = true;
-        console.log(error);
       }
     );
   }

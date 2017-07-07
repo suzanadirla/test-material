@@ -7,6 +7,7 @@ import 'rxjs/add/operator/map';
 import {ApiPaths} from '../api/api-endpoint-config';
 import {HttpAuth} from '../api/http-auth';
 import {People} from './model/people';
+import {PeopleJSON, PeopleJSONEntry, PeopleListJSON} from './model/people-json';
 
 @Injectable()
 export class PeopleService {
@@ -31,14 +32,14 @@ export class PeopleService {
 
 export class PeopleFactory {
 
-  public static createPeopleList(peopleListData): People[] {
-    return peopleListData['entries'].map((peopleData) => {
-      return PeopleFactory.createPeople(peopleData['entry']);
+  public static createPeopleList(peopleListData: PeopleListJSON): People[] {
+    return peopleListData.entries.map((peopleData: PeopleJSON) => {
+      return PeopleFactory.createPeople(peopleData.entry);
     });
 
   }
 
-  private static createPeople(peopleData): People {
+  private static createPeople(peopleData: PeopleJSONEntry): People {
     let people = new People();
 
     people.company = peopleData.company || {};
