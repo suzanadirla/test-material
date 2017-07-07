@@ -10,7 +10,7 @@
 /*// Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue.*/
-$candy-app-primary: mat-palette($mat-grey);
+$candy-app-primary: mat-palette($mat-grey );
 $candy-app-accent: mat-palette($mat-green, 600, 100, 900);
 
 /*// The warn palette is optional (defaults to red).*/
@@ -23,3 +23,14 @@ $candy-app-theme: mat-light-theme($candy-app-primary, $candy-app-accent, $candy-
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.*/
 @include angular-material-theme($candy-app-theme);
+
+.mat-chip:not(.mat-basic-chip) {
+  background-color: #eeeeee;
+  color: rgba(0, 0, 0, .87)
+}
+
+
+.mat-chip:not(.mat-basic-chip).mat-accent {
+  background-color: #ddeedd;
+  color: rgba(0, 0, 0, .87)
+}
